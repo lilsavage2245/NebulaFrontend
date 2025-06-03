@@ -7,6 +7,7 @@ import HelpSection from '../Components/HelpSection';
 import HotSection from '../Components/hot/HotSection';
 import BenefitSection from '../Components/benefits/BenefitSection';
 import FaqsSection from '../Components/FaqsSection';
+import Logo from '../Components/Logo';
 
 const Courses = () => {
   return (
@@ -18,6 +19,7 @@ const Courses = () => {
       <HotSection />
       <BenefitSection />
       <FaqsSection />
+      <Logo />
     </>
   );
 };
