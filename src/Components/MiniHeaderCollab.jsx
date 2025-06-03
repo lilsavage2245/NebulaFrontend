@@ -1,30 +1,27 @@
 // MiniHeaderCollab.jsx
 import React from 'react';
 
-const navLinks = [
-  { label: 'Overview', href: '#overview' },
-  { label: 'Opportunities', href: '#collaboration' },
-  { label: 'Partnerships', href: '#partnerships' },
-  { label: 'News', href: '#news' },
-  { label: 'FAQs', href: '#faqs' },
+const navItems = [
+  { label: 'Industry Partnership', color: '#FE2C55' },
+  { label: 'Educational Institution', color: '#F24E1E' },
+  { label: 'Corporate Sponsorship', color: '#FE2C55' },
+  { label: 'Community Organization', color: '#F24E1E' },
+  { label: 'Individual Mentors and Volunteers', color: '#FE2C55' },
 ];
 
 const MiniHeaderCollab = () => {
   return (
-    <section className="bg-[#008080] text-white py-4 px-6 md:px-12">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-        <h2 className="text-2xl font-semibold">Collaboration</h2>
-        <nav className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="hover:underline hover:text-yellow-300 transition-all"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+    <section className="bg-[rgba(0,0,0,0.06)] py-6 px-4 w-full">
+      <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 max-w-screen-xl mx-auto">
+        {navItems.map((item, index) => (
+          <span
+            key={index}
+            className="text-[20px] leading-6 font-normal font-inter"
+            style={{ color: item.color }}
+          >
+            {item.label}
+          </span>
+        ))}
       </div>
     </section>
   );
