@@ -4,6 +4,7 @@ import MiniNavbar from '../Components/MiniNavbar';
 import HeroApply from '../Components/HeroApply';
 import ProgramSection from '../Components/programs/ProgramSection';
 import FaqsApply from '../Components/FaqsApply';
+import AssistanceSection from '../Components/AssistanceSection';
 
 const Apply = () => {
   return (
@@ -12,6 +13,7 @@ const Apply = () => {
     <HeroApply />
     <ProgramSection />
     <FaqsApply />
+    <AssistanceSection />
     </>
   );
 };
