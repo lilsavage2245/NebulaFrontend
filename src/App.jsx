@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Courses from './Pages/Courses';
 import Apply from './Pages/Apply';
 import Collaborate from './Pages/Collaborate';
+import About from './Pages/About';
 import MainLayouts from './layouts/MainLayouts';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/courses" element={<MainLayouts><Courses /></MainLayouts>} />
         <Route path="/Apply" element={<MainLayouts><Apply /></MainLayouts>} />
         <Route path="/Collaborate" element={<MainLayouts><Collaborate /></MainLayouts>} />
+        <Route path="/About" element={<MainLayouts><About /></MainLayouts>} />
       </Routes>
     </Router>
   );
