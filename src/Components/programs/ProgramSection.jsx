@@ -1,7 +1,6 @@
 // ProgramSection.jsx
 import React from 'react';
 import ProgramCard from './ProgramCard';
-import Program1 from '../../assets/Program1.png';
 import Program2 from '../../assets/Program2.png';
 import Program3 from '../../assets/Program3.png';
 import Program4 from '../../assets/Program4.png';
@@ -9,11 +8,10 @@ import Program5 from '../../assets/Program5.png';
 
 const ProgramSection = () => {
   const programs = [
-    { image: Program5, label: 'Pre-Academy Program' },
-    { image: Program2, label: 'Beginner Program' },
-    { image: Program3, label: 'Intermediate Program' },
-    { image: Program4, label: 'Advanced Program' },
-    { image: Program1, label: 'Expert Program' },
+    { imageSrc: Program5, title: 'Pre-Academy Program', description: 'Come learn, play, and invent your future—one fun project at a time.' },
+    { imageSrc: Program2, title: 'Beginner Program', description: 'Come learn, play, and invent your future—one fun project at a time.' },
+    { imageSrc: Program3, title: 'Intermediate Program', description: 'Come learn, play, and invent your future—one fun project at a time.' },
+    { imageSrc: Program4, title: 'Advanced Program', description: 'Come learn, play, and invent your future—one fun project at a time.' },
   ];
 
   return (
@@ -26,7 +24,7 @@ const ProgramSection = () => {
       {/* Program Cards Grid */}
       <div className="flex flex-wrap gap-y-12 gap-x-6 justify-start items-start w-full">
         {programs.map((program, index) => (
-          <ProgramCard key={index} image={program.image} label={program.label} />
+          <ProgramCard key={index} imageSrc={program.imageSrc} title={program.title} description={program.description} />
         ))}
       </div>
     </section>

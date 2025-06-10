@@ -1,65 +1,85 @@
-// FaqsApply.jsx
 import React, { useState } from 'react';
 
-const faqs = [
-  {
-    question: 'How long does the application process take?',
-    answer: '..........'
-  },
-  {
-    question: 'Is financial assistance or scholarship available?',
-    answer: '..........'
-  },
-  {
-    question: 'Are there any prerequisites to join?',
-    answer: 'Some advanced courses may require prior knowledge or experience. Pre-Academy and Beginner courses do not.'
-  },
-  {
-    question: 'How do I know my course category?',
-    answer: '..........'
-  },
-  {
-    question: 'Is Nebula Academy suitable for kids?',
-    answer: 'Yes! Our Pre-Academy program is designed for students aged 10 and above.'
-  },
-  {
-    question: 'Can I switch between course levels later?',
-    answer: 'Yes, students can switch levels upon evaluation and recommendation by instructors.'
-  }
-];
+const FaqsSection = () => {
+  const faqs = [
+    {
+      question: "What programs are available at Nebula Academy?",
+      answer: "We offer Pre-Academy, Beginner, Intermediate, Advanced, and Expert programs across various tech domains.",
+    },
+    {
+      question: "Can I study part-time or remotely?",
+      answer: "Yes! We support full-time, part-time, and flexible learning options, including online learning.",
+    },
+    {
+      question: "Do I need prior experience to join?",
+      answer: "No prior experience is required. Our Pre-Academy and Beginner programs are perfect for starters.",
+    },
+  ];
 
-const FaqsApply = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="max-w-[1296px] mx-auto px-4 py-10">
-      <h2 className="text-[36px] font-semibold text-center mb-10">Frequently Asked Questions</h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border border-gray-300 rounded-lg overflow-hidden"
-          >
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full text-left px-6 py-4 bg-white hover:bg-gray-50 font-medium text-lg"
+    <section className="w-full max-w-6xl mx-auto py-20 px-6 flex flex-col md:flex-row gap-10 md:gap-20">
+      
+      {/* Left: FAQs */}
+      <div className="w-full md:w-2/3">
+        <h2 className="text-4xl font-bold mb-6 text-black">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-gray-300 rounded-xl p-4 bg-white shadow-sm"
             >
-              {faq.question}
-            </button>
-            {openIndex === index && (
-              <div className="px-6 py-4 bg-gray-50 text-gray-700">
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
+              <button
+                className="w-full text-left flex justify-between items-center"
+                onClick={() => toggleFaq(index)}
+              >
+                <span className="text-lg font-medium text-black">{faq.question}</span>
+                <span className="text-yellow-400 text-2xl font-bold">
+                  {openIndex === index ? '−' : '+'}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="mt-2 text-gray-700">{faq.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Right: Ask a Question Form */}
+      <div className="w-full md:w-1/3 bg-white shadow-md rounded-xl p-6">
+        <h3 className="text-2xl font-bold text-black mb-4">Ask a Specific Question</h3>
+        <form className="space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <textarea
+            placeholder="Your Question"
+            rows="4"
+            className="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-yellow-400 text-black px-6 py-2 rounded-full font-medium hover:bg-yellow-500 transition"
+          >
+            Submit Question
+          </button>
+        </form>
       </div>
     </section>
   );
 };
 
-export default FaqsApply;
+export default FaqsSection;

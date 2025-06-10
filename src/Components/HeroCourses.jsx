@@ -1,45 +1,62 @@
-// src/components/Courses/HeroCourse.jsx
 import React from 'react';
-import heroImage from '../assets/HeroCourse.png';
-import { Link } from 'react-router-dom';
+import HeroCourseImg from '../assets/HeroCourse.png';
 
-const HeroCourse = () => {
+const heroTags = [
+  { label: 'Featured' },
+  { label: 'In Demand' },
+  { label: 'Popular' },
+];
+
+export default function HeroCourse() {
   return (
-    <section className="flex flex-col items-center justify-center px-4 py-8 gap-8 w-full max-w-7xl mx-auto">
-      {/* Title and Underline */}
-      <div className="flex flex-col items-center gap-2">
-        <h2 className="text-4xl sm:text-5xl font-port font-normal text-black text-center">
-          Courses
-        </h2>
-        <div className="w-32 h-1 border-b-[5px] border-yellow-400" />
+    <section className="relative max-w-[1386px] mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between">
+      {/* Left Image Block */}
+      <div className="w-full lg:w-[972px] h-[570px] relative z-0">
+        <img
+          src={HeroCourseImg}
+          alt="Course Preview"
+          className="w-full h-full object-cover rounded-md shadow-md"
+        />
       </div>
 
-      {/* Hero Frame */}
-      <div className="flex flex-col md:flex-row items-center gap-8 w-full p-4 sm:p-6 lg:p-8 bg-teal-600/45 rounded-3xl">
-        {/* Text Section */}
-        <div className="flex flex-col justify-between items-start gap-8 max-w-md text-center md:text-left">
-          <p className="text-lg sm:text-xl font-port leading-relaxed text-black font-port lligat sans">
-            We offer a range of high quality courses from pre-academy courses to beginner’s courses to intermediate courses and to advanced courses.
-            Study options includes full-time, part-time, and flexible learning.
-          </p>
-          <Link to="/apply">
-            <button className="px-6 py-2 bg-yellow-400 text-[#4A2B29] text-sm font-poppins rounded-full shadow-lg hover:bg-yellow-300">
-              Apply Now
-            </button>
-          </Link>
+      {/* Right Text Block with Overlap */}
+      <div className="relative z-10 w-full lg:w-[600px] bg-white bg-opacity-80 shadow-lg p-6 rounded-md flex flex-col gap-8 mt-10 lg:mt-0 -ml-0 lg:-ml-20">
+        {/* Heading + Underline */}
+        <div className="flex items-center gap-6">
+          <h2 className="text-[48px] leading-[72px] font-bold text-black font-poppins">
+            Courses
+          </h2>
+          <div className="w-[224px] border-t-[7px] border-[#FFC925]" />
         </div>
 
-        {/* Image Section */}
-        <div className="w-full md:w-[804px] h-[300px] md:h-[400px] rounded-r-[150px] overflow-hidden bg-white">
-          <img
-            src={heroImage}
-            alt="Hero Courses"
-            className="w-full h-full object-cover object-center"
-          />
+        {/* Description */}
+        <p className="text-[24px] leading-[32px] font-normal text-black font-port">
+          We offer a range of high quality courses from pre‑academy courses to beginner’s courses to intermediate courses and to advanced courses. Study options include full‑time, part‑time, and flexible learning.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex flex-wrap gap-4">
+          {heroTags.map((tag, index) => (
+            <button
+              key={index}
+              className="flex items-center bg-white rounded-full px-4 py-2 shadow-md hover:bg-gray-100 transition"
+            >
+              <span className="text-[16px] font-poppins text-black">
+                {tag.label}
+              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4 text-black ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default HeroCourse;
+}

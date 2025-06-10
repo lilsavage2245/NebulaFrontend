@@ -1,27 +1,21 @@
-// BenefitCard.jsx
-import React from 'react';
+import React from "react";
 
-const BenefitCard = ({ image, title, description }) => {
+const BenefitCard = ({ title, description, image }) => {
   return (
-    <div className="flex flex-col bg-white w-full max-w-2xl rounded-lg overflow-hidden shadow-md">
-      {/* Image Section */}
-      <div
-        className="w-full h-64 bg-cover bg-center rounded-t-lg"
-        style={{ backgroundImage: `url(${image})` }}
-      ></div>
-
-      {/* Text Section */}
-      <div className="flex flex-col gap-4 p-6">
-        <h3 className="text-3xl font-semibold text-black">
+    <div className="flex flex-row justify-between items-center p-4 gap-4 w-[590px] h-[185px] bg-white border-b border-black">
+      {/* Text Block */}
+      <div className="flex flex-col w-[370px] h-[88px]">
+        <h2 className="text-[36px] leading-[44px] font-semibold font-inter text-black">
           {title}
-        </h3>
-        <p className="text-base text-gray-800">
-          {description}
-        </p>
-        <button className="bg-[#FFC925] text-[#4A2B29] px-6 py-2 rounded-full shadow-md text-sm font-medium w-max">
-          Join free introductory class
-        </button>
+        </h2>
+        <p className="text-[18px] leading-[28px] text-black">{description}</p>
       </div>
+
+      {/* Image Frame */}
+      <div
+        className="w-[200px] h-[175px] bg-white rounded-tr-[48px] overflow-hidden"
+        style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 const OurTeamCard = ({ name, title, image }) => {
   return (
-    <div className="flex flex-col items-start gap-6 w-[401px] h-[524px] bg-white shadow-md rounded-[24px]">
+    <div className="flex flex-col items-start gap-6 w-[300px] h-[395px] bg-white shadow-md rounded-[24px]">
       {/* Frame 12 - Image */}
       <div
         className="w-full h-[364px] bg-cover bg-center rounded-t-[24px]"

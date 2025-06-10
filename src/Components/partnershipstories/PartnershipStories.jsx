@@ -5,7 +5,7 @@ import PartnershipStoriesimg from '../../assets/PartnershipStories.png';
 
 const stories = [
   {
-    title: 'Google for Education',
+    title: 'Value Proposition',
     summary:
       'Partnered with Nebula Academy to deliver cloud-based learning environments for all coding bootcamps.',
     image: PartnershipStoriesimg,
@@ -28,7 +28,7 @@ const PartnershipStories = () => {
   return (
     <section className="w-full px-6 sm:px-10 lg:px-20 py-16 bg-gray-50">
       <h2 className="text-4xl font-semibold font-poppins text-center mb-10 text-black">
-        Partnership Highlights
+        Who Are We?
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

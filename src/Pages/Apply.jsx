@@ -2,7 +2,9 @@
 import React from 'react';
 import MiniNavbar from '../Components/MiniNavbar';
 import HeroApply from '../Components/HeroApply';
-import ProgramSection from '../Components/programs/ProgramSection';
+import ApplyProgramSection from '../Components/programs/ApplyProgramSection';
+import ApplyOptionSection from '../Components/apply-options/ApplyOptionSection';
+import EnquirySection from '../Components/EnquirySection';
 import FaqsApply from '../Components/FaqsApply';
 import AssistanceSection from '../Components/AssistanceSection';
 
@@ -11,7 +13,9 @@ const Apply = () => {
     <>
     <MiniNavbar />
     <HeroApply />
-    <ProgramSection />
+    <ApplyProgramSection />
+    <ApplyOptionSection />
+    <EnquirySection />
     <FaqsApply />
     <AssistanceSection />
     </>

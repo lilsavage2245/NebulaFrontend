@@ -1,15 +1,19 @@
-// src/layouts/MainLayout.jsx
+// src/layouts/MainLayouts.jsx
 import React from 'react';
 import HeaderSection from '../Components/HeaderSection';
 import Footer from '../Components/Footer';
-import Breadcrumbs from '../Components/BreadCrumb'; // ← You’ll create this component
+import Breadcrumbs from '../Components/BreadCrumb'; // optional
 
 const MainLayouts = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-white text-gray-900">
+    <div className="flex flex-col min-h-screen bg-[#F5F5FF] text-gray-900">
       <HeaderSection />
-      <Breadcrumbs /> {/* 👈 Insert here */}
-      <main className="flex-1">{children}</main>
+      <Breadcrumbs />
+      
+      <main className="flex-grow">
+        {children}
+      </main>
+
       <Footer />
     </div>
   );
