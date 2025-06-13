@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Courses from './Pages/Courses';
 import Apply from './Pages/Apply';
-import Collaborate from './Pages/Collaborate';
+import Collaborate from './Pages/collaborate/Collaborate';
 import About from './Pages/About';
+import IndustryPartnership from './Pages/collaborate/IndustryPartnership';
 import MainLayouts from './layouts/MainLayouts';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/Apply" element={<MainLayouts><Apply /></MainLayouts>} />
         <Route path="/Collaborate" element={<MainLayouts><Collaborate /></MainLayouts>} />
         <Route path="/About" element={<MainLayouts><About /></MainLayouts>} />
+        <Route path="/IndustryPartnership" element={<MainLayouts><IndustryPartnership /></MainLayouts>} />
       </Routes>
     </Router>
   );

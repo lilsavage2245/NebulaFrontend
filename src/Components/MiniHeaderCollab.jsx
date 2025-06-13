@@ -1,29 +1,33 @@
-// MiniHeaderCollab.jsx
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const navItems = [
-  { label: 'Industry Partnership', color: '#FE2C55' },
-  { label: 'Educational Institution', color: '#F24E1E' },
-  { label: 'Corporate Sponsorship', color: '#FE2C55' },
-  { label: 'Community Organization', color: '#F24E1E' },
-  { label: 'Individual Mentors and Volunteers', color: '#FE2C55' },
+const collabLinks = [
+  { name: 'Industry Partnership', path: '../Pages/collaborate/IndustryPartnership' },
+  { name: 'Educational Institution', path: '/collaborate/education' },
+  { name: 'Corporate Sponsorship', path: '/collaborate/corporate' },
+  { name: 'Community Organisation', path: '/collaborate/community' },
+  { name: 'Mentors & Volunteers', path: '/collaborate/mentors' },
 ];
 
 const MiniHeaderCollab = () => {
   return (
-    <section className="bg-[rgba(0,0,0,0.06)] py-6 px-4 w-full">
-      <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 max-w-screen-xl mx-auto">
-        {navItems.map((item, index) => (
-          <span
-            key={index}
-            className="text-[20px] leading-6 font-normal font-inter"
-            style={{ color: item.color }}
+    <nav className="w-full bg-[#F8F8F8] border-b border-gray-200 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap gap-4 justify-center text-sm md:text-base">
+        {collabLinks.map(link => (
+          <NavLink
+            key={link.name}
+            to={link.path}
+            className={({ isActive }) =>
+              `px-4 py-2 rounded-full transition duration-200 ${
+                isActive ? 'bg-[#1D15B1] text-white' : 'text-[#1D15B1] hover:bg-[#E5E5FF]'
+              }`
+            }
           >
-            {item.label}
-          </span>
+            {link.name}
+          </NavLink>
         ))}
       </div>
-    </section>
+    </nav>
   );
 };
 

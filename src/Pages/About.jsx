@@ -5,6 +5,9 @@ import HeroAbout from '../Components/HeroAbout';
 import PartnershipStories from '../Components/partnershipstories/PartnershipStories';
 import OurTeamSection from '../Components/ourteam/OurTeamSection';
 import NewsSection from '../Components/News/NewsSection';
+import Newsletter from '../Components/Newsletter';
+import LatestArticleSection from '../Components/LatestArticle/LatestArticleSection';
+import EventsSection from '../Components/Events/EventSection';
 import FinalCtaSection from '../Components/FinalCtaSection';
 
 const About = () => {
@@ -15,6 +18,9 @@ const About = () => {
     <PartnershipStories />
     <OurTeamSection />
     <NewsSection />
+    <Newsletter />
+    <LatestArticleSection />
+    <EventsSection />
     <FinalCtaSection />
 
     </>
