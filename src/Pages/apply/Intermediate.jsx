@@ -1,7 +1,7 @@
 // src/Pages/collaborate/IndustryPartnership.jsx
 import React from 'react';
 
-const Beginners = () => {
+const Intermediate = () => {
   return (
     <div className="p-10">
       <h1 className="text-3xl font-bold">Industry Partnership</h1>
@@ -10,4 +10,4 @@ const Beginners = () => {
   );
 };
 
-export default Beginners;
+export default Intermediate;

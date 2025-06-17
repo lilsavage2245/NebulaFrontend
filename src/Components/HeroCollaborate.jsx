@@ -11,7 +11,7 @@ const partners = [
 
 const HeroCollaborate = () => {
   return (
-    <section className="relative w-[1400px] h-[700px] mx-6 bg-white px-4 flex justify-start items-center gap-10 mt-24">
+    <section className="relative w-full h-[700px] mx-6 bg-white px-4 flex justify-start items-center gap-10 mt-24">
       {/* Collab page head */}
       <div className="flex flex-col justify-center items-start gap-10 w-[390px] h-[400px]">
         <div className="flex flex-col items-start gap-10 w-full">

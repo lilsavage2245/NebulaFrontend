@@ -2,12 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const collabLinks = [
-  { name: 'Industry Partnership', path: '../Pages/collaborate/IndustryPartnership' },
+  { name: 'Industry Partnership', path: '/collaborate/industry' },
   { name: 'Educational Institution', path: '/collaborate/education' },
   { name: 'Corporate Sponsorship', path: '/collaborate/corporate' },
   { name: 'Community Organisation', path: '/collaborate/community' },
   { name: 'Mentors & Volunteers', path: '/collaborate/mentors' },
 ];
+
 
 const MiniHeaderCollab = () => {
   return (
