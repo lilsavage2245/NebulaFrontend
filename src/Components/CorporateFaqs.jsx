@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 const CorporateFaqs = () => {
   const faqs = [
     {
-      question: "What programs are available at Nebula Academy?",
-      answer: "We offer Pre-Academy, Beginner, Intermediate, Advanced, and Expert programs across various tech domains.",
+      question: " Are sponsorship tax deductible?",
+      answer: ".............................",
     },
     {
-      question: "Can I study part-time or remotely?",
-      answer: "Yes! We support full-time, part-time, and flexible learning options, including online learning.",
+      question: "Can sponsorships be customized to align with our CSR goals?",
+      answer: "............................",
     },
     {
-      question: "Do I need prior experience to join?",
-      answer: "No prior experience is required. Our Pre-Academy and Beginner programs are perfect for starters.",
+      question: "How will our sponsorship impact students?",
+      answer: "...............................",
     },
   ];
 

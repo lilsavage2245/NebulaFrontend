@@ -74,20 +74,17 @@ const RankingSection = () => {
 
       {/* CTA Section */}
       <div className="bg-white rounded-3xl p-8 flex flex-col items-center gap-10 text-center shadow-md">
-        <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold text-black leading-snug font-poppins max-w-5xl">
+        <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-black leading-snug font-poppins max-w-5xl">
           Start your journey today with NEBULA Academy.
         </h2>
 
         <div className="flex flex-wrap justify-center gap-6">
           {/* Elevated Button */}
           <button className="bg-[#FFC925] text-[#4A2B29] shadow-lg px-6 py-2 rounded-full text-sm sm:text-base font-poppins hover:bg-yellow-400 transition">
-            Elevated Button
+            About Nebula
           </button>
 
-          {/* Outline Button */}
-          <button className="border border-black text-[#4A2B29] px-6 py-2 rounded-full text-sm sm:text-base font-poppins hover:bg-black hover:text-white transition">
-            Outline Button
-          </button>
+         
         </div>
       </div>
     </section>

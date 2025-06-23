@@ -1,12 +1,26 @@
 // src/Pages/collaborate/IndustryPartnership.jsx
 import React from 'react';
+import HeroBeginner from '../../Components/HeroBeginner';
+import BeginnerRequirement from '../../Components/requirements/BeginnerRequirement';
+import BeginnerCategories from '../../Components/categories/BeginnerCategories';
+import BeginnerOthers from '../../Components/BeginnerOthers';
+import BeginnerOutcome from '../../Components/outcome/BeginnerOutcome';
+import EventsSection from '../../Components/Events/EventSection';
+import BeginnerFaqs from '../../Components/BeginnerFaqs';
+import BeginnerTestimonials from '../../Components/BeginnerTestimonials';
 
 const Beginners = () => {
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold">Industry Partnership</h1>
-      <p>Welcome to the Industry Partnership collaboration page.</p>
-    </div>
+    <>
+    <HeroBeginner />
+    <BeginnerRequirement />
+    <BeginnerCategories />
+    <BeginnerOthers />
+    <BeginnerOutcome />
+    <EventsSection />
+    <BeginnerFaqs />
+    <BeginnerTestimonials />
+    </>
   );
 };
 

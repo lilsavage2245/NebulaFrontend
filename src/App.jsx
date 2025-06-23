@@ -1,9 +1,9 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './Pages/home/Home';
 import Courses from './Pages/Courses';
-import Apply from './Pages/Apply';
+import Apply from './Pages/apply/Apply';
 import Collaborate from './Pages/collaborate/Collaborate';
 import About from './Pages/About';
 import IndustryPartnership from './Pages/collaborate/IndustryPartnership';
@@ -14,6 +14,7 @@ import PreAcademy from './Pages/apply/PreAcademy';
 import Beginners from './Pages/apply/Beginners';
 import Intermediate from './Pages/apply/Intermediate';
 import Advanced from './Pages/apply/Advanced';
+import FreeClass from './Pages/apply/FreeClass';
 import MainLayouts from './layouts/MainLayouts';
 import CommunityOrganization from './Pages/collaborate/CommunityOrganization';
 
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/apply/beginner" element={<MainLayouts><Beginners /></MainLayouts>} />
         <Route path="/apply/intermediate" element={<MainLayouts><Intermediate /></MainLayouts>} />
         <Route path="/apply/advanced" element={<MainLayouts><Advanced /></MainLayouts>} />
+        <Route path="/apply/free-class" element={<MainLayouts><FreeClass /></MainLayouts>} />
       </Routes>
     </Router>
   );

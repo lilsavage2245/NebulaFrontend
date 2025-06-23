@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 const EducationFaqs = () => {
   const faqs = [
     {
-      question: "What programs are available at Nebula Academy?",
-      answer: "We offer Pre-Academy, Beginner, Intermediate, Advanced, and Expert programs across various tech domains.",
+      question: "Is there any cost involved for our school?",
+      answer: "..........................",
     },
     {
-      question: "Can I study part-time or remotely?",
-      answer: "Yes! We support full-time, part-time, and flexible learning options, including online learning.",
+      question: "Can we customize a partnership to match our curriculum needs?",
+      answer: "..............................",
     },
     {
-      question: "Do I need prior experience to join?",
-      answer: "No prior experience is required. Our Pre-Academy and Beginner programs are perfect for starters.",
+      question: " What resources are provided for teachers?",
+      answer: "...........................",
     },
   ];
 
