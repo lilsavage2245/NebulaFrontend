@@ -1,48 +1,64 @@
 // src/components/VideoSection.jsx
-import React from 'react';
-import logo from '../assets/logo.png.png';
-import videoThumbnail from '../assets/Video.png';
+import React, { useState } from 'react';
+//import logo from '../assets/logo.png.png';
+import videoImage1 from '../assets/Video.png';
+import videoImage2 from '../assets/apple.png';
 
 const VideoSection = () => {
+  const [currentContent, setCurrentContent] = useState({
+    title: 'Our Vision at Nebula',
+    description: 'Why We Built Nebula: Empowering tech-driven Futures',
+    image: videoImage1,
+  });
+
+  const handleChange = (option) => {
+    if (option === 'first') {
+      setCurrentContent({
+        title: 'Our Vision at Nebula',
+        description: 'Why We Built Nebula: Empowering tech-driven Futures',
+        image: videoImage1,
+      });
+    } else {
+      setCurrentContent({
+        title: 'Our Global Impact',
+         description: 'The Nebula Journey: Real students real growth',
+        image: videoImage2,
+      });
+    }
+  };
+
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-20 py-12 rounded-lg">
-      
+    <section className="px-6 py-16 bg-white text-center">
       {/* Top Row */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-6">
-        <img src={logo} alt="Nebula Logo" className="w-14 h-14 object-contain" />
         <div>
-          <h2 className="text-xl sm:text-2xl font-bold text-black font-poppins">Who Are We ?</h2>
-          <p className="text-sm sm:text-base text-black font-poppins">
-            Secondary text
-          </p>
+          <h2 className="text-[24px] sm:text-[45px] font-bold  text-black font-poppins">Who Are We ?</h2>
         </div>
       </div>
 
-      {/* Video Image */}
-      <div className="w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-md mb-6">
-  <img
-    src={videoThumbnail}
-    alt="Video"
-    className="w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] object-cover rounded-lg"
-  />
-</div>
 
+      <h2 className="text-3xl font-bold mb-4">{currentContent.title}</h2>
 
-      {/* Bottom Description & Buttons */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        
-        {/* Description */}
-        <p className="text-base sm:text-lg text-black font-bold font-poppins leading-6 max-w-3xl mt-10">
-          Why We Built Nebula - Empowering tech driven Futures
-        </p>
+      <div className="w-full max-w-4xl mx-auto">
+        <img
+          src={currentContent.image}
+          alt="Video Thumbnail"
+          className="rounded-lg shadow-md w-full h-[450px] mb-6"
+        />
+         <h3 className="text-1xl font-normal mb-4">{currentContent.description}</h3>
 
-        {/* Text Buttons */}
-        <div className="flex gap-12 mt-10">
-          <button className="px-4 py-2 rounded-full text-sm font-poppins text-[#4A2B29] border border-black hover:bg-gray-100 transition">
-            The Vision
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={() => handleChange('first')}
+            className="px-6 py-2 bg-yellow-400 text-black rounded-full shadow-md hover:bg-yellow-300 transition"
+          >
+            See Vision
           </button>
-          <button className="px-4 py-2 rounded-full text-sm font-poppins text-[#4A2B29] border border-black hover:bg-white-100 transition">
-            Student Experience
+          <button
+            onClick={() => handleChange('second')}
+            className="px-6 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-400 transition"
+          >
+            See Impact
           </button>
         </div>
       </div>

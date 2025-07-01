@@ -15,6 +15,7 @@ import Beginners from './Pages/apply/Beginners';
 import Intermediate from './Pages/apply/Intermediate';
 import Advanced from './Pages/apply/Advanced';
 import FreeClass from './Pages/apply/FreeClass';
+import FindCourses from './Pages/PreAcademy/FindCourses';
 import MainLayouts from './layouts/MainLayouts';
 import CommunityOrganization from './Pages/collaborate/CommunityOrganization';
 
@@ -41,6 +42,8 @@ const App = () => {
         <Route path="/apply/intermediate" element={<MainLayouts><Intermediate /></MainLayouts>} />
         <Route path="/apply/advanced" element={<MainLayouts><Advanced /></MainLayouts>} />
         <Route path="/apply/free-class" element={<MainLayouts><FreeClass /></MainLayouts>} />
+
+        <Route path="/pre-academy/find-courses" element={<MainLayouts><FindCourses /></MainLayouts>} />
       </Routes>
     </Router>
   );
