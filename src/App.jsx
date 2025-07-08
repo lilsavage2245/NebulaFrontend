@@ -18,6 +18,13 @@ import FreeClass from './Pages/apply/FreeClass';
 import FindCourses from './Pages/PreAcademy/FindCourses';
 import MainLayouts from './layouts/MainLayouts';
 import CommunityOrganization from './Pages/collaborate/CommunityOrganization';
+import SearchPage from './Pages/SearchPage';
+import LearnMore from './Pages/PreAcademy/LearnMore';
+import FindCourses2 from './Pages/Academy/FindCourses2';
+import LearnMore2 from './Pages/Academy/LearnMore2';
+import Programs from './Pages/Programs';
+import Eligibility from './Pages/PreAcademy/Eligibility';
+import CareerPaths from './Pages/Academy/ExploreCareer';
 
 const App = () => {
   return (
@@ -44,6 +51,14 @@ const App = () => {
         <Route path="/apply/free-class" element={<MainLayouts><FreeClass /></MainLayouts>} />
 
         <Route path="/pre-academy/find-courses" element={<MainLayouts><FindCourses /></MainLayouts>} />
+        <Route path="/pre-academy/learn-more" element={<MainLayouts><LearnMore /></MainLayouts>} />
+        <Route path="/academy/find-courses" element={<MainLayouts><FindCourses2 /></MainLayouts>} />
+        <Route path="/academy/learn-more" element={<MainLayouts><LearnMore2 /></MainLayouts>} />
+        <Route path="/programs" element={<MainLayouts><Programs /></MainLayouts>} />
+        <Route path="/pre-academy/eligibility" element={<MainLayouts><Eligibility /></MainLayouts>} />
+        <Route path="/career-paths" element={<MainLayouts><CareerPaths /></MainLayouts>} />
+
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </Router>
   );

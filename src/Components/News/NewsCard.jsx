@@ -4,7 +4,7 @@ import {ChevronRight,  ArrowRight } from 'lucide-react';
 
 const NewsCard = ({ image, date, category, tittle, summary, summary2, summary3 }) => {
   return (
-    <div className="w-[408px] h-[450px] rounded-br-[150px] overflow-hidden shadow-[0px_6px_20px_5px_rgba(255,201,37,0.8)] bg-yellow flex flex-col justify-end relative">
+    <div className="w-[408px] h-[450px] rounded-br-[150px] overflow-hidden shadow-[15px_15px_4px_0px_rgba(255,201,37,0.8)] bg-yellow flex flex-col justify-end relative">
       
       {/* Background Image */}
       <div className="relative w-full h-[260px] bg-cover bg-center"/>

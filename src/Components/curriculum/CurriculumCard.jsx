@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CurriculumCard = ({ title, description, core, project, badge }) => {
+const CurriculumCard = ({ title, core, project, badge }) => {
   return (
     <div className="flex flex-col items-start p-6 gap-6 w-[280px] bg-[#008080] rounded-[24px] text-white">
       {/* Title */}
@@ -8,12 +8,7 @@ const CurriculumCard = ({ title, description, core, project, badge }) => {
         {title}
       </h2>
 
-      {/* Description */}
-      <div className="text-[12px] leading-[18px] space-y-2">
-        {description.split('\n').map((line, i) => (
-          <p key={i}>{line}</p>
-        ))}
-      </div>
+      
 
       {/* Core */}
       {core && (

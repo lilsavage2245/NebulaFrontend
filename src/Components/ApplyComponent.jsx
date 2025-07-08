@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom'; // Import Link
 
 const ApplyComponent = () => {
   return (
@@ -23,24 +24,29 @@ const ApplyComponent = () => {
       </div>
 
 
-      {/* Learning Outcome */}
-      <div className="flex flex-col bg-[#77777733] px-6 py-4 w-full gap-[24px]">
-       <h2 className= "text-black font-bold text-lg leading-9">
-           How to Apply
-        </h2>
-        <p>When you are ready, click the button below to begin your application. It's quick and easy. Our team is here to help if you need support:</p>
-       <p>
-        <h3 className= "text-black font-semibold leading-9">
-            Note:
-        </h3>
-        This program is designed for learners aged 10 and above. Parental or guidian approval is required during application.</p>
-        
-           {/* Join Button */}
-        <button className="flex items-center gap-2 bg-[#FFC925] px-6 py-2 rounded-full w-fit hover:bg-yellow-400 transition">
-          <span className="text-[16px] font-semibold text-black font-poppins">Apply Now</span>
-          <ArrowRight size={18} className="text-black" />
-        </button>
-      </div>
+      {/* How to Apply Section */}  
+<div className="flex flex-col bg-[#77777733] px-6 py-4 w-full gap-[24px]">
+  <h2 className="text-black font-bold text-lg leading-9">
+    How to Apply
+  </h2>
+  <p>
+    When you are ready, click the button below to begin your application. It's quick and easy.
+    Our team is here to help if you need support:
+  </p>
+  <p>
+    <h3 className="text-black font-semibold leading-9">Note:</h3>
+    This program is designed for learners aged 10 and above. Parental or guardian approval is required during application.
+  </p>
+
+  {/* Link to Eligibility page */}
+  <Link to="/pre-academy/eligibility">
+    <button className="flex items-center gap-2 bg-[#FFC925] px-6 py-2 rounded-full w-fit hover:bg-yellow-400 transition">
+      <span className="text-[16px] font-semibold text-black font-poppins">Apply Now</span>
+      <ArrowRight size={18} className="text-black" />
+    </button>
+  </Link>
+</div>
+
 
       {/* Learning Outcome */}
       <div className="flex flex-col bg-[#77777733] px-6 py-4 w-full gap-[24px]">

@@ -4,7 +4,7 @@ import { ChevronRight, ArrowRight } from 'lucide-react';
 
 const CourseCard = ({image, category, tittle, summary, summary2, summary3 }) => {
   return (
-    <div className="w-[299px] h-[470px] rounded-[120px_0px_120px_0px] shadow-[0px_6px_20px_5px_rgba(255,201,37,0.8)] overflow-hidden flex flex-col bg-white">
+    <div className="w-[299px] h-[470px] rounded-[120px_0px_120px_0px] shadow-[15px_15px_4px_0px_rgba(255,201,37,0.8)] overflow-hidden flex flex-col bg-white">
 
       {/* Top Half - Image */}
       <div

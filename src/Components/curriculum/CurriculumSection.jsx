@@ -37,6 +37,7 @@ const curriculumList = [
     project: 'LEGO Robot and Mini Machine Build',
     badge: '“STEM Inventor”',
   },
+  
  
 ];
 

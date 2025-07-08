@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Check, Search } from 'lucide-react';
+import { Check,  } from 'lucide-react';
+import SearchBar from './SearchBar';
 
 const levels = ['All', 'Beginner', 'Intermediate', 'Advanced', 'Pre-academy'];
 const studyModes = [
@@ -10,6 +11,7 @@ const studyModes = [
   'Individual modules',
   'Apprenticeships',
 ];
+
 
 const CourseFinder = () => {
   const [activeLevel, setActiveLevel] = useState('All');
@@ -45,16 +47,9 @@ const CourseFinder = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="flex flex-col sm:flex-row w-full gap-2">
-          <input
-            type="text"
-            placeholder="Course title or Keyword"
-            className="flex-grow p-2 rounded bg-white text-sm text-black placeholder:text-black/60"
-          />
-          <button className="bg-[#FFC925] px-4 py-2 rounded-lg text-black font-medium text-sm flex items-center justify-center gap-1">
-            <Search className="w-4 h-4" /> Search
-          </button>
-        </div>
+        <>
+        <SearchBar />
+        </>
 
         {/* Category Links */}
         <div className="flex flex-wrap gap-2 text-black text-base sm:text-lg">
