@@ -16,10 +16,10 @@ const StepCard = ({ image, title, description }) => {
 
       {/* Right Text Content */}
       <div className="flex flex-col justify-center items-start gap-4 w-full lg:w-[400px] h-auto">
-        <h3 className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold font-poppins leading-[20px] text-black">
+        <h3 className="text-[24px] sm:text-[28px] lg:text-[28px] font-bold font-poppins leading-[20px] text-black">
           {title}
         </h3>
-        <p className="text-[18px] sm:text-[20px] lg:text-[24px] font-normal font-poppins leading-[36px] text-black">
+        <p className="text-[18px] sm:text-[20px] lg:text-[20px] font-normal font-poppins leading-[36px] text-black">
           {description}
         </p>
       </div>

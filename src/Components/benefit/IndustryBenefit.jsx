@@ -38,11 +38,11 @@ export default function IndustryBenefit() {
   ];
 
   return (
-    <section className="w-full max-w-[1272px] mx-auto px-4 py-20">
+    <section className="w-full max-w-[1272px] mx-auto px-4 py-20 border-b-[5px] border-black-200">
       {/* Section Heading */}
       <div className="flex flex-col items-center gap-4 mb-12">
-        <div className="w-[400px] border-t-[6px] border-yellow-400"></div>
-        <h2 className="text-[40px] font-bold text-center text-black font-poppins">
+        <div className="w-[250px] border-t-[6px] border-yellow-400"></div>
+        <h2 className="text-4xl font-bold text-center text-black font-poppins">
           Why Partner With Nebula Code Academy
         </h2>
       </div>

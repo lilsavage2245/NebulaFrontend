@@ -12,10 +12,10 @@ const BenefitSection = () => {
       {/* Header Section */}
       <div className="flex flex-col items-center gap-6 text-center w-full max-w-[760px]">
         <div className="w-[180px] sm:w-[220px] md:w-[260px] border-t-[6px] sm:border-t-[7px] border-[#FFC925]" />
-        <h2 className="font-inter font-bold text-[28px] sm:text-[36px] md:text-[48px] leading-tight text-black">
+        <h2 className="font-inter font-bold text-[28px] sm:text-[36px] md:text-4x1 leading-tight text-black">
           Why learn with Nebula Academy
         </h2>
-        <p className="font-poppins text-[16px] sm:text-[20px] md:text-[24px] leading-[28px] sm:leading-[32px] text-black">
+        <p className="font-poppins text-[16px] sm:text-[20px] md:text-[16px] leading-[28px] sm:leading-[32px] text-black">
           Reinforcing your value proposition
         </p>
       </div>
@@ -23,15 +23,15 @@ const BenefitSection = () => {
       {/* Main Content Section */}
       <div className="flex flex-col lg:flex-row gap-6 bg-white rounded-[32px] lg:rounded-[56px] p-4 sm:p-6 w-full">
         {/* Left: Testimonial Block */}
-        <div className="flex flex-col gap-6 w-full lg:w-[650px]">
+        <div className="flex flex-col gap-6 w-full lg:w-[600px]">
           <div
-            className="w-full h-[250px] sm:h-[400px] lg:h-[600px] rounded-[32px] lg:rounded-[56px] bg-cover bg-center"
+            className="w-full h-[250px] sm:h-[400px] lg:h-[550px] rounded-[32px] lg:rounded-[56px] bg-cover bg-center"
             style={{ backgroundImage: `url(${testimonialBg})` }}
           ></div>
 
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="w-0 h-[40px] sm:h-[60px] lg:h-[77px] border-l-[6px] sm:border-l-[7px] border-[#FFC925]" />
-            <p className="text-[18px] sm:text-[24px] lg:text-[32px] leading-snug sm:leading-[36px] lg:leading-[48px] font-poppins text-black">
+            <p className="text-[18px] sm:text-[24px] lg:text-[18px] leading-snug sm:leading-[36px] lg:leading-[48px] font-poppins text-black">
               Top 10 life changing testimonials from students
             </p>
           </div>

@@ -45,7 +45,7 @@ export default function SponsorshipTiers() {
   ];
 
   return (
-    <section className="w-full max-w-[1272px] mx-auto px-4 py-20 flex flex-col items-center gap-12">
+    <section className="w-full max-w-[1272px] mx-auto px-4 py-20 flex flex-col items-center gap-12 border-b-[5px] border-black-200">
       {/* Heading Section */}
       <div className="bg-yellow-300/70 w-full rounded-xl text-center py-8 px-4 flex flex-col gap-6">
         <h2 className="text-[40px] font-bold font-poppins text-black">Our Sponsorship Tier</h2>

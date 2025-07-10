@@ -10,7 +10,7 @@ export default function FreeClassOthers() {
       <div className="flex flex-col gap-8 max-w-[600px]">
         {/* What You Need to Know */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-[32px] md:text-[45px] font-bold leading-tight text-black">
+          <h2 className="text-[32px] md:text-4x1 font-bold leading-tight text-black">
             What You Need To Know About Free Introductory Class
           </h2>
           <ul className="flex flex-col gap-2 text-[16px] leading-[24px] text-black font-normal">
@@ -28,7 +28,7 @@ export default function FreeClassOthers() {
 
         {/* Benefits */}
         <div className="flex flex-col gap-4">
-          <h2 className="text-[32px] md:text-[45px] font-bold leading-tight text-black">
+          <h2 className="text-[32px] md:text-4x1 font-bold leading-tight text-black">
             Benefits
           </h2>
           <ul className="flex flex-col gap-2 text-[16px] leading-[24px] text-black font-normal">
@@ -45,9 +45,9 @@ export default function FreeClassOthers() {
         <img
           src={OthersImage}
           alt="Free Class"
-          className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+          className="w-full h-[350px] object-cover rounded-lg shadow-lg"
         />
-        <p className="text-center text-[20px] md:text-[24px] font-medium leading-[36px] text-black">
+        <p className="text-center text-[20px] md:text-[20px] font-medium leading-[36px] text-black">
           By registering as a Freebie, you consent to getting updates and communication about our
           programs.
         </p>

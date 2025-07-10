@@ -14,7 +14,7 @@ const AcademyFees = () => {
       {/* Top Vector and Title */}
       <div className="flex flex-col items-start gap-4">
         <div className="w-[85.5px] h-0 border-t-[12px] border-yellow-400" />
-        <h2 className="text-[32px] sm:text-[40px] font-extrabold text-black font-poppins">
+        <h2 className="text-[32px] sm:text-4xl font-extrabold text-black font-poppins">
           Fees and Funding
         </h2>
       </div>
@@ -24,7 +24,7 @@ const AcademyFees = () => {
         <p className="text-xl sm:text-2xl text-center mb-4 font-medium">
           Our fees for an Academic Section is:
         </p>
-        <div className="text-center text-[48px] sm:text-[60px] md:text-[80px] font-extrabold leading-tight">
+        <div className="text-center text-[48px] sm:text-[60px] md:text-[64px] font-extrabold leading-tight">
           £10,000
         </div>
       </div>
@@ -45,7 +45,7 @@ const AcademyFees = () => {
               <div className="border border-black rounded-md p-2 flex items-center justify-center w-[40px] h-[40px]">
                 <Check className="text-black" />
               </div>
-              <p className="text-base sm:text-lg font-medium text-black max-w-3xl">
+              <p className="text-base sm:text-[15px] font-medium text-black max-w-3xl">
                 {item}
               </p>
             </div>

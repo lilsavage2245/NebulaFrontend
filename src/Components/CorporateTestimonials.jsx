@@ -29,7 +29,7 @@ export default function CorporateTestimonials() {
     <section className="w-full max-w-[1272px] mx-auto px-4 py-20">
       {/* Section Header */}
       <div className="text-center mb-16">
-        <h2 className="text-[36px] sm:text-[40px] md:text-[48px] font-bold font-poppins text-black mb-4">
+        <h2 className="text-[36px] sm:text-4xl md:text-4xl font-bold font-poppins text-black mb-4">
           Current Corporate Sponsors
         </h2>
         <p className="text-[20px] font-light text-gray-700 font-poppins max-w-2xl mx-auto">

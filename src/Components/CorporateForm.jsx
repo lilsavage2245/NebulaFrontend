@@ -32,8 +32,8 @@ export default function CorporateForm() {
     <section className="w-full max-w-[768px] mx-auto px-4 py-20">
       {/* Heading */}
       <div className="flex flex-col items-center gap-4 mb-12">
-        <div className="w-[350px] border-t-[6px] border-yellow-400"></div>
-        <h2 className="text-[32px] sm:text-[36px] md:text-[40px] font-bold text-center text-black font-poppins">
+        <div className="w-[170px] border-t-[6px] border-yellow-400"></div>
+        <h2 className="text-[32px] sm:text-[36px] md:text-4xl font-bold text-center text-black font-poppins">
           Easy-To-Fill Sponsorship Interest Form
         </h2>
       </div>

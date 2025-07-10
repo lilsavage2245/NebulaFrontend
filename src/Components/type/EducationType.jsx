@@ -49,17 +49,17 @@ export default function EducationType() {
   ];
 
   return (
-    <section className="w-full max-w-[1272px] mx-auto px-4 py-20">
+    <section className="w-full max-w-[1272px] mx-auto px-4 py-20 border-b-[5px] border-black-200">
       {/* Section Heading */}
       <div className="flex flex-col items-center gap-4 mb-12">
-        <div className="w-[400px] border-t-[6px] border-yellow-400"></div>
-        <h2 className="text-[40px] font-bold text-center text-black font-poppins">
+        <div className="w-[250px] border-t-[6px] border-yellow-400"></div>
+        <h2 className="text-4xl font-bold text-center text-black font-poppins">
           Types of Industry Partnerships Offered
         </h2>
       </div>
 
       {/* Responsive Grid of Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10">
         {partnerships.map((item, index) => (
           <TypeCard
             key={index}

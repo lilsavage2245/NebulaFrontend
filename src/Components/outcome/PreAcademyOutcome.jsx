@@ -24,10 +24,10 @@ export default function PreAcademyOutcome() {
 
   return (
     <section className="w-full bg-white py-16 px-6 md:px-24">
-      <h2 className="text-[36px] md:text-[56px] font-bold text-black text-center mb-6">
-        Pre - Academy Program Outcome 
+      <h2 className="text-[36px] md:text-4xl font-bold text-black text-center mb-6">
+        Pre - Academy Program Outcome
       </h2>
-      <p className="text-center max-w-4xl mx-auto text-[16px] md:text-[18px] leading-7 text-black mb-16">
+      <p className="text-center max-w-4xl mx-auto text-[16px] md:text-[16px] leading-7 text-black mb-16">
         The six years foundational program introduce students to the real world of technology through hands-on projects.
         <br className="hidden md:block" />
         Every student will:

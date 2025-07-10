@@ -106,16 +106,8 @@ const CareerProspectsComponent = () => {
         <p>Our mission isn't just to teach, but also to nurture future innovators</p>
       </div>
 
-      {/* Recommended For */}
-      <div className="bg-[#77777733] px-6 py-4 w-full text-black font-semibold text-lg leading-9">
-        <p>Recommended For:</p>
-        <ul className="list-disc pl-5 mt-2 space-y-1">
-          <li>Learners aged 10 to 12</li>
-          <li>Absolute beginners</li>
-          <li>Kids curious about computers</li>
-          <li>Parents or guardians seeking structured and meaningful screen time</li>
-        </ul>
-      </div>
+     
+      
     </section>
   );
 };

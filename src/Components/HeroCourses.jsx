@@ -30,7 +30,7 @@ export default function HeroCourse() {
         </div>
 
         {/* Description */}
-        <p className="text-[24px] leading-[32px] font-normal text-black font-port">
+        <p className="text-[18px] leading-[32px] font-normal text-black font-port">
           We offer a range of high quality courses from pre‑academy courses to beginner’s courses to intermediate courses and to advanced courses. Study options include full‑time, part‑time, and flexible learning.
         </p>
 

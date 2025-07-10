@@ -34,16 +34,16 @@ const ApplyProgramSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center gap-16 w-full px-4 py-20">
+    <section className="flex flex-col items-center gap-10 w-full px-4 py-20">
       {/* Header Section */}
-      <div className="flex flex-col items-center gap-8 text-center max-w-3xl">
-        <div className="flex flex-col items-center gap-6">
-          <div className="border-t-[7px] border-[#FFC925] w-[314px]" />
-          <h2 className="text-4xl md:text-[45px] font-bold text-black">
+      <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
+        <div className="flex flex-col items-center gap-4">
+          <div className="border-t-[7px] border-[#FFC925] w-[250px]" />
+          <h2 className="text-4xl md:text-4x1 font-bold text-black">
             Explore Programs and Eligibility
           </h2>
         </div>
-        <p className="text-xl md:text-2xl font-normal text-black">
+        <p className="text-xl md:text-[16px] font-normal text-black">
           Each of our programs have a range of requirements and eligibility
         </p>
       </div>

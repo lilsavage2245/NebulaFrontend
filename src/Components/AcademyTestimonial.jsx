@@ -39,8 +39,8 @@ const AcademyTestimonial = () => {
   };
 
   return (
-    <section className="relative w-full max-w-[1512px] mx-auto py-16 px-4 border-b-[5px] border-black-200">
-      <h2 className="text-[40px] font-bold text-center text-black font-poppins mb-8">
+    <section className="relative w-full max-w-[1000px] mx-auto py-16 px-4 border-b-[5px] border-black-200">
+      <h2 className="text-[32px] font-bold text-center text-black font-poppins mb-8">
         What students say
       </h2>
 
@@ -52,7 +52,7 @@ const AcademyTestimonial = () => {
         <span className="w-[120px] border-t-4 border-black" />
       </div>
 
-      <p className="text-center font-poppins text-[20px] leading-[30px] text-black mb-10">
+      <p className="text-center font-poppins text-[17px] leading-[30px] text-black mb-10">
         {current.message}
       </p>
 
@@ -60,13 +60,13 @@ const AcademyTestimonial = () => {
         <img
           src={current.image}
           alt={current.name}
-          className="w-[130px] h-[130px] rounded-full object-cover"
+          className="w-[110px] h-[110px] rounded-full object-cover"
         />
       </div>
 
       <div className="text-center font-poppins">
-        <h3 className="text-[30px] font-semibold text-black">{current.name}</h3>
-        <p className="text-[25px] text-black">{current.role}</p>
+        <h3 className="text-[24px] font-semibold text-black">{current.name}</h3>
+        <p className="text-[20px] text-black">{current.role}</p>
       </div>
 
       <div className="flex justify-between items-center mt-8 px-12">

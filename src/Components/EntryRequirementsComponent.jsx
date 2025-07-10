@@ -60,7 +60,7 @@ const EntryRequirementscomponent = () => {
        {/* Learning Outcome */}
       <div className="flex flex-col bg-[#77777733] px-6 py-4 w-full gap-[24px]">
        <h2 className= "text-black font-bold text-lg leading-9">
-           Who Can Enroll ?
+           Not Quite Ready ?
         </h2>
         <p>If your child is still under 10 or you’re unsure about readiness:</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">

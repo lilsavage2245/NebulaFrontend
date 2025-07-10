@@ -21,10 +21,10 @@ export default function IndustryPartners() {
   return (
     <section className="w-full max-w-[1272px] mx-auto px-4 py-20 flex flex-col items-center gap-6">
       {/* Yellow vector line */}
-      <div className="w-[350px] border-t-[6px] border-yellow-400"></div>
+      <div className="w-[250px] border-t-[6px] border-yellow-400"></div>
 
       {/* Heading */}
-      <h2 className="text-[36px] sm:text-[40px] md:text-[48px] font-bold text-center text-black font-inter leading-[1.2]">
+      <h2 className="text-[36px] sm:text-[40px] md:text-4x1 font-bold text-center text-black font-inter leading-[1.2]">
         Current Industry Partners
       </h2>
 
@@ -45,7 +45,7 @@ export default function IndustryPartners() {
       </div>
 
       {/* Caption */}
-      <p className="text-center text-[20px] sm:text-[24px] md:text-[32px] font-medium leading-[39px] text-black max-w-[823px] font-inter">
+      <p className="text-center text-[20px] sm:text-[24px] md:text-[24px] font-medium leading-[39px] text-black max-w-[823px] font-inter">
         Partnership with some of the most reliable companies
       </p>
     </section>

@@ -29,7 +29,7 @@ const WhatisAcademy = () => {
       </div>
 
       {/* Step Cards */}
-      <div className="relative w-full h-[500px] lg:h-[650px] mt-6">
+      <div className="relative w-[1272px] h-[500px] lg:h-[500px] mt-0">
         <div className="absolute right-0 top-0 z-10" style={{ transform: 'translateY(0%)' }}>
           <AcademyCard image={cards[0].image} level={cards[0].level} />
         </div>
@@ -45,7 +45,7 @@ const WhatisAcademy = () => {
       </div>
 
       {/* Specialization Paragraph */}
-      <p className="mt-[8px] lg:mt-[40px] text-lg lg:text-[20px] leading-[30px] text-black max-w-[700px] ml-auto">
+      <p className="mt-[32px] lg:mt-[40px] text-lg lg:text-[20px] leading-[30px] text-black max-w-[700px] ml-auto">
         Some multiple specialization such as Web Development, Data Science, Some multiple specialization such as
         Web Development, Data Science, Some multiple specialization such as Web Development, Data Science...
       </p>

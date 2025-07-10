@@ -13,7 +13,7 @@ export default function FreeClassCard({
   return (
     <div className="flex flex-col gap-4 w-full max-w-[408px] min-h-[479px]">
       {/* Image Frame */}
-      <div className="w-full h-[250px] bg-white rounded-lg overflow-hidden">
+      <div className="w-full h-[210px] bg-white rounded-lg overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -23,7 +23,7 @@ export default function FreeClassCard({
 
       {/* Text Content */}
       <div className="flex flex-col gap-1 px-2">
-        <h3 className="text-[24px] md:text-[21px] font-bold leading-[44px] text-black">
+        <h3 className="text-[24px] md:text-[19px] font-bold leading-[44px] text-black">
           {title}
         </h3>
         <p className="text-[15px] font-normal leading-[32px] text-black">{level}</p>

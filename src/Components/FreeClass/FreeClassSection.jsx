@@ -31,7 +31,7 @@ export default function FreeClassSection() {
 
   return (
     <section className="w-full px-4 md:px-16 py-20 bg-white border border-black ">
-      <h2 className="text-[36px] md:text-[48px] font-bold text-center text-black mb-12">
+      <h2 className="text-[36px] md:text-4x1 font-bold text-center text-black mb-12">
         Upcoming Free Classes
       </h2>
 

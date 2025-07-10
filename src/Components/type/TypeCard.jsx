@@ -4,22 +4,22 @@ import React from "react";
 
 const TypeCard = ({ image, title, description, buttonLabel }) => {
   return (
-    <div className="flex flex-col items-start gap-8 w-full h-auto min-h-[500px] bg-white rounded-[24px] overflow-hidden shadow-sm">
+    <div className="flex flex-col items-start gap-6 w-[350px] h-auto min-h-[400px] bg-white rounded-[24px] overflow-hidden shadow-sm">
       {/* Top Image */}
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[210px]">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover bg-white"
+          className="w-full h-[210px] object-cover bg-white"
         />
       </div>
 
       {/* Title & Description */}
       <div className="flex flex-col items-center justify-center gap-4 px-4 text-center w-full">
-        <h3 className="text-[40px] font-bold leading-[20px] tracking-[0.0025em] text-black font-poppins">
+        <h3 className="text-[24px] font-bold leading-[20px] tracking-[0.0025em] text-black font-poppins">
           {title}
         </h3>
-        <p className="text-[16px] font-normal leading-[24px] tracking-[0.0025em] text-black font-poppins max-w-[580px]">
+        <p className="text-[15px] font-normal leading-[24px] tracking-[0.0025em] text-black font-poppins max-w-[580px]">
           {description}
         </p>
       </div>
