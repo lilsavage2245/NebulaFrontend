@@ -6,7 +6,7 @@ import News2 from '../../assets/News2.png';
 import News3 from '../../assets/News3.png';
 const NewsSection = () => {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-center gap-[70px] bg-white">
+    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-center gap-[70px]">
       
       {/* Frame 7 – Heading with Vector underline */}
       <div className="flex flex-col items-center gap-12">

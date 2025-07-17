@@ -20,11 +20,16 @@ import MainLayouts from './layouts/MainLayouts';
 import CommunityOrganization from './Pages/collaborate/CommunityOrganization';
 import SearchPage from './Pages/SearchPage';
 import LearnMore from './Pages/PreAcademy/LearnMore';
-import FindCourses2 from './Pages/Academy/FindCourses2';
 import LearnMore2 from './Pages/Academy/LearnMore2';
 import Programs from './Pages/Programs';
 import Eligibility from './Pages/PreAcademy/Eligibility';
 import CareerPaths from './Pages/Academy/ExploreCareer';
+import SoftwareDevelopment from './Pages/Academy/SoftwareDevelopment';
+import InterestForm1 from './Pages/RegisterInterest/InterestForm1';
+import PreAcademyApplicationForm from './Pages/PreAcademy/PreAcademyApplicationForm';
+import BeginnerFindCourses from './Pages/Academy/FindCourses/BeginnerFindCourses';
+import IntermediateFindCourses from './Pages/Academy/FindCourses/IntermediateFindCourses';
+import AdvancedFindCourses from './Pages/Academy/FindCourses/AdvancedFindCourses';
 
 const App = () => {
   return (
@@ -52,13 +57,18 @@ const App = () => {
 
         <Route path="/pre-academy/find-courses" element={<MainLayouts><FindCourses /></MainLayouts>} />
         <Route path="/pre-academy/learn-more" element={<MainLayouts><LearnMore /></MainLayouts>} />
-        <Route path="/academy/find-courses" element={<MainLayouts><FindCourses2 /></MainLayouts>} />
         <Route path="/academy/learn-more" element={<MainLayouts><LearnMore2 /></MainLayouts>} />
         <Route path="/programs" element={<MainLayouts><Programs /></MainLayouts>} />
         <Route path="/pre-academy/eligibility" element={<MainLayouts><Eligibility /></MainLayouts>} />
         <Route path="/career-paths" element={<MainLayouts><CareerPaths /></MainLayouts>} />
+        <Route path="/careers/software-and-web" element={<MainLayouts><SoftwareDevelopment /></MainLayouts>} />
+        <Route path="pre-academy/application-form" element={<MainLayouts><PreAcademyApplicationForm /></MainLayouts>} />
+        <Route path="academy/find-courses/beginner" element={<MainLayouts><BeginnerFindCourses /></MainLayouts>} />
+        <Route path="academy/find-courses/intermediate" element={<MainLayouts><IntermediateFindCourses /></MainLayouts>} />
+        <Route path="academy/find-courses/advanced" element={<MainLayouts><AdvancedFindCourses /></MainLayouts>} />
 
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/interest-form" element={<MainLayouts><InterestForm1 /></MainLayouts>} />
       </Routes>
     </Router>
   );

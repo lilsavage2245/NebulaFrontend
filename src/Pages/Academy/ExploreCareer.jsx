@@ -8,7 +8,6 @@ import CareerPartnership from '../../Components/CareerPartnership';
 import CareerQuickAction from '../../Components/CareerQuickAction';
 import IndustryPartners from '../../Components/IndustryPartners';
 import CareerFilter from '../../Components/CareerFilter';
-import CareerFilterUI from '../../Components/CareerFilterUI';
 
 const FindCourses2 = () => {
   return (
@@ -21,7 +20,6 @@ const FindCourses2 = () => {
     <CareerQuickAction />
     <IndustryPartners />
     <CareerFilter />
-    <CareerFilterUI />
     </>
   );
 };

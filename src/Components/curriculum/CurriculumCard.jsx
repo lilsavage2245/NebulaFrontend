@@ -2,7 +2,7 @@ import React from 'react';
 
 const CurriculumCard = ({ title, core, project, badge }) => {
   return (
-    <div className="flex flex-col items-start p-6 gap-6 w-[280px] bg-[#008080] rounded-[24px] text-white">
+    <div className="flex flex-col items-start p-6 gap-6 w-[250px] bg-[#008080] rounded-[24px] text-white shrink-0">
       {/* Title */}
       <h2 className="text-[28px] font-bold leading-[42px]">
         {title}

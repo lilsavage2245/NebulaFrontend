@@ -2,6 +2,7 @@
 import React from 'react';
 import bgImg from '../assets/SecHero.png.png';
 import heroImg from '../assets/Hero.png.png';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -29,12 +30,16 @@ const HeroSection = () => {
               Build your future in technology at a world class coding education academy, discover innovative, hands-on learning experiences and soft skills.
             </p>
 <div className="flex flex-col sm:flex-row gap-4 mt-4">
+  <Link to="/apply/free-class">
   <button className="bg-[#FFC925] text-[#201520] font-semibold text-sm sm:text-base px-6 py-3 rounded-md hover:bg-yellow-400 transition">
     Join Free Intro Class
   </button>
+  </Link>
+  <Link to="/apply">
   <button className="border border-[#FFC925] text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-md hover:bg-[#FFC925] hover:text-[#201520] transition">
     Apply Now
   </button>
+  </Link>
 </div>
 
           </div>

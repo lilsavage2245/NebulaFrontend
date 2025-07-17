@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import scratchImg from '../assets/apple.png'; // Use actual paths
 import codeImg from '../assets/Outcome1.png';
 import idnImg from '../assets/Others2.png';
 
+
 const OverviewComponent = () => {
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    scrollRef.current?.scrollBy({ left: -300, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current?.scrollBy({ left: 300, behavior: 'smooth' });
+  };
+
+
   return (
     <section className="flex flex-col items-start px-2 md:px-4 py-8 gap-[48px] border-y-[5px] border-[#77777733] w-full max-w-4xl mx-auto">
       {/* Title */}
@@ -50,34 +62,53 @@ const OverviewComponent = () => {
       </div>
 
       {/* Learning Tools */}
-      <div className="w-full border-y border-black py-4 flex flex-col items-center gap-4">
-        <h3 className="text-xl font-bold text-center text-black">Learning Tools Used</h3>
+<div className="w-full border-y border-black py-4 flex flex-col items-center gap-4">
+      <h3 className="text-xl font-bold text-center text-black">Learning Tools Used</h3>
 
-        <div className="flex items-center justify-center gap-8">
+      <div className="flex items-center justify-center gap-4 w-full px-4">
+        <button onClick={scrollLeft}>
           <ChevronLeft size={40} className="text-gray-600 cursor-pointer" />
+        </button>
 
-          <div className="flex gap-6">
-            {/* Tool 1 */}
-            <div className="flex flex-col items-center gap-2 w-[150px]">
-              <img src={scratchImg} alt="Scratch" className="w-[150px] h-[100px] object-cover bg-gray-300" />
-              <p className="text-center text-black text-sm">Scratch</p>
-            </div>
-            {/* Tool 2 */}
-            <div className="flex flex-col items-center gap-2 w-[150px]">
-              <img src={codeImg} alt="Code.org Puzzle" className="w-[150px] h-[100px] object-cover bg-gray-300" />
-              <p className="text-center text-black text-sm">Code.org Puzzle</p>
-            </div>
-            {/* Tool 3 */}
-            <div className="flex flex-col items-center gap-2 w-[150px]">
-              <img src={idnImg} alt="IDN" className="w-[150px] h-[100px] object-cover bg-gray-300" />
-              <p className="text-center text-black text-sm">I.D.N</p>
-            </div>
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto scrollbar-hide px-1 w-full max-w-[900px]"
+        >
+          {/* Tool 1 */}
+          <div className="flex flex-col items-center gap-2 w-[220px] shrink-0">
+            <img src={scratchImg} alt="Scratch" className="w-[220px] h-[100px] object-cover bg-gray-300" />
+            <p className="text-center text-black text-sm">Scratch</p>
+          </div>
+          {/* Tool 2 */}
+          <div className="flex flex-col items-center gap-2 w-[220px] shrink-0">
+            <img src={codeImg} alt="Code.org Puzzle" className="w-[220px] h-[100px] object-cover bg-gray-300" />
+            <p className="text-center text-black text-sm">Code.org Puzzle</p>
+          </div>
+          {/* Tool 3 */}
+          <div className="flex flex-col items-center gap-2 w-[220px] shrink-0">
+            <img src={idnImg} alt="IDN" className="w-[220px] h-[100px] object-cover bg-gray-300" />
+            <p className="text-center text-black text-sm">I.D.N</p>
           </div>
 
-          <ChevronRight size={40} className="text-gray-600 cursor-pointer" />
-        </div>
-      </div>
+          {/* Tool 2 */}
+          <div className="flex flex-col items-center gap-2 w-[220px] shrink-0">
+            <img src={codeImg} alt="Code.org Puzzle" className="w-[220px] h-[100px] object-cover bg-gray-300" />
+            <p className="text-center text-black text-sm">Code.org Puzzle</p>
+          </div>
 
+          {/* Tool 2 */}
+          <div className="flex flex-col items-center gap-2 w-[220px] shrink-0">
+            <img src={codeImg} alt="Code.org Puzzle" className="w-[220px] h-[100px] object-cover bg-gray-300" />
+            <p className="text-center text-black text-sm">Code.org Puzzle</p>
+          </div>
+          {/* Add more cards here */}
+        </div>
+
+        <button onClick={scrollRight}>
+          <ChevronRight size={40} className="text-gray-600 cursor-pointer" />
+        </button>
+      </div>
+      </div>
       {/* Recommended For */}
       <div className="bg-[#77777733] px-6 py-4 w-full text-black font-semibold text-lg leading-9">
         <p className="text-start text-[24px] font-bold">

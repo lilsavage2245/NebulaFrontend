@@ -37,6 +37,17 @@ const curriculumList = [
     project: 'LEGO Robot and Mini Machine Build',
     badge: '“STEM Inventor”',
   },
+  {
+    title: 'STEM Discovery',
+    description: `“Explore how technology and science shape the world around us”\n\nIn this hands-on session, students explore basic robotics using LEGO Education kits and engage in science experiments that demonstrate real world technology principles. They begin to understand how sensors, motors, and simple mechanics work while building logical reasoning and teamwork skills. ....................................................                         .`,
+    core: [
+      'Intoduction to robotics through LEGO Education kits',
+      'Hands-on mini experiments with cause effect logic',
+      'Problem solving through challenges and STEM games',
+    ],
+    project: 'LEGO Robot and Mini Machine Build',
+    badge: '“STEM Inventor”',
+  },
   
  
 ];
@@ -58,10 +69,10 @@ const CurriculumSection = () => {
       <h2 className="text-3xl font-bold text-[#333] mb-6">Curriculum Overview</h2>
 
       {/* Scrollable Row */}
-      <div className="relative">
+      <div className="flex flex-col items-center justify-center gap-4 w-full px-4">
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-4"
+          className="flex gap-6 overflow-x-auto scrollbar-hide  w-full max-w-[900px]"
           style={{ scrollBehavior: 'smooth' }}
         >
           {curriculumList.map((item, index) => (

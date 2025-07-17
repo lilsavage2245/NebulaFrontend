@@ -1,6 +1,6 @@
 import React from 'react';
-import CareerSection from './CareerSection';
 import { Link } from 'react-router-dom'; // Import Link
+import CareerSection2 from './CareerSection2';
 
 
 const CareerPath = () => {
@@ -13,7 +13,7 @@ const CareerPath = () => {
           Career Pathway
         </h2>
       </div>
-      <CareerSection />
+      <CareerSection2 />
 
       {/* Link to Eligibility page */}
   <Link to="/career-paths">

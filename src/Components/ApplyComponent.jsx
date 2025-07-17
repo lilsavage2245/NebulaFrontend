@@ -61,10 +61,12 @@ const ApplyComponent = () => {
         You can register your interests and we will send you updates, reminders, and helpful tips to guide your decision.</p>
         
            {/* Join Button */}
+           <Link to="/interest-form">
         <button className="flex items-center gap-2 bg-[#FFC925] px-6 py-2 rounded-full w-fit hover:bg-yellow-400 transition">
           <span className="text-[16px] font-semibold text-black font-poppins">Register Interest</span>
           <ArrowRight size={18} className="text-black" />
         </button>
+      </Link>
       </div>
 
      

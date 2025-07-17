@@ -1,8 +1,9 @@
 // src/components/CourseCard.jsx
 import React from 'react';
 import { ChevronRight, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const CourseCard = ({image, category, tittle, summary, summary2, summary3 }) => {
+const CourseCard = ({image, category, tittle, summary, summary2, summary3, link }) => {
   return (
     <div className="w-[299px] h-[470px] rounded-[120px_0px_120px_0px] shadow-[15px_15px_4px_0px_rgba(255,201,37,0.8)] overflow-hidden flex flex-col bg-white">
 
@@ -54,9 +55,11 @@ const CourseCard = ({image, category, tittle, summary, summary2, summary3 }) => 
 
   {/* Frame 284 - Arrow Button */}
   <div className="flex justify-start mt-4">
-    <div className="w-[38px] h-[38px] bg-[#FFC925] border border-black rounded-full flex items-center justify-center opacity-90 hover:opacity-100 transition">
+    <Link to={link}>
+    <button className="w-[38px] h-[38px] bg-[#FFC925] border border-black rounded-full flex items-center justify-center opacity-90 hover:opacity-100 transition">
       <ArrowRight size={18} className="text-black" />
-    </div>
+    </button>
+    </Link>
   </div>
 </div>
     </div>

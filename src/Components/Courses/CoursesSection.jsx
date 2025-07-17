@@ -8,7 +8,7 @@ import Course4 from '../../assets/Course4.png';
 
 const CourseSection = () => {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-start gap-10 bg-white">
+    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-start gap-10 ">
       
       {/* Frame 9 - Title */}
       <div className="flex flex-col items-center gap-2 px-4">
@@ -31,36 +31,40 @@ const CourseSection = () => {
 export default CourseSection;
 
 const dummyCourses= [
-{
-  image: Course1,
-  tittle: 'Intermediate Level',
-  category: 'Programming and algorithms',
-  summary: 'Intermediate python and OOP',
-  summary2: 'Java OOP concept',
-  summary3: 'C++ intermediate',
-},
-{
-  image: Course2,
-  tittle: 'Pre-Academy (Age 10-16)',
-  category: 'Programming Basics',
-  summary: 'Scratch programming',
-  summary2: 'Blocky coding',
-  summary3: 'introduction to python',
-},
-{
-  image: Course3,
-  tittle: 'Beginners level',
-  category: 'Programming Fundamental',
-  summary: 'Python for beginners',
-  summary2: 'C programming basics',
-  summary3: 'Javascript fundamental',
-},
-{
-  image: Course4,
-  tittle: 'Advanced Level',
-  category: 'Advanced Programming & Software Engineering',
-  summary: 'Advanced java(spring & hibernate)',
-  summary2: 'C++ advanced concept',
-  summary3: 'Advanced python for developers',
-},
-]
+  {
+    image: Course1,
+    tittle: 'Intermediate Level',
+    category: 'Programming and algorithms',
+    summary: 'Intermediate python and OOP',
+    summary2: 'Java OOP concept',
+    summary3: 'C++ intermediate',
+    link: '/apply/intermediate'
+  },
+  {
+    image: Course2,
+    tittle: 'Pre-Academy (Age 10-16)',
+    category: 'Programming Basics',
+    summary: 'Scratch programming',
+    summary2: 'Blocky coding',
+    summary3: 'Introduction to python',
+    link: '/apply/pre-academy'
+  },
+  {
+    image: Course3,
+    tittle: 'Beginners level',
+    category: 'Programming Fundamental',
+    summary: 'Python for beginners',
+    summary2: 'C programming basics',
+    summary3: 'Javascript fundamental',
+    link: '/apply/beginner'
+  },
+  {
+    image: Course4,
+    tittle: 'Advanced Level',
+    category: 'Advanced Programming & Software Engineering',
+    summary: 'Advanced java (spring & hibernate)',
+    summary2: 'C++ advanced concept',
+    summary3: 'Advanced python for developers',
+    link: '/apply/advanced'
+  },
+];

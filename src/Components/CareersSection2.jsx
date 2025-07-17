@@ -1,5 +1,5 @@
-// src/components/CareersSection.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Make sure you're using React Router
 import CareerImg from '../assets/Study2.png'; // Replace with actual images
 
 const careerPaths = [
@@ -11,6 +11,9 @@ const careerPaths = [
   'Robotics and IOT',
   'Tech Strategy and Product'
 ];
+
+const slugify = (text) =>
+  text.toLowerCase().replace(/[\s&]+/g, '-').replace(/[^\w-]+/g, '');
 
 const CareersSection = () => {
   return (
@@ -24,7 +27,11 @@ const CareersSection = () => {
       {/* Cards */}
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-10 max-w-[1272px] w-full">
         {careerPaths.map((title, idx) => (
-          <div key={idx} className="w-[299px] h-[310px] flex flex-col items-start shadow-md rounded-tr-[150px] overflow-hidden hover:scale-[1.02] transition duration-300">
+          <Link
+            to={`/careers/${slugify(title)}`}
+            key={idx}
+            className="w-[299px] h-[310px] flex flex-col items-start shadow-md rounded-tr-[150px] overflow-hidden hover:scale-[1.02] transition duration-300"
+          >
             <div
               className="w-full h-[250px] bg-cover bg-center"
               style={{ backgroundImage: `url(${CareerImg})` }}
@@ -32,7 +39,7 @@ const CareersSection = () => {
             <div className="w-full h-[60px] flex justify-center items-center bg-[#008080] px-4">
               <span className="text-white text-[16px] font-poppins">{title}</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

@@ -8,10 +8,10 @@ import academyImg4 from '../../assets/Course4.png';
 
 const WhatisAcademy = () => {
   const cards = [
-    { level: 'Beginner', image: academyImg1 },
-    { level: 'Intermediate', image: academyImg2 },
-    { level: 'Advanced', image: academyImg3 },
-    { level: 'Expert', image: academyImg4 },
+    { level: 'Expert', image: academyImg1 },
+    { level: 'Advanced', image: academyImg2 },
+    { level: 'Intermediate', image: academyImg3 },
+    { level: 'Beginner', image: academyImg4 },
   ];
 
   return (

@@ -6,7 +6,7 @@ import Breadcrumbs from '../Components/BreadCrumb'; // optional
 
 const MainLayouts = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F5FF] text-gray-900">
+    <div className="flex flex-col min-h-screen bg-[#DDDDDD] text-gray-900">
       <HeaderSection />
       <Breadcrumbs />
       

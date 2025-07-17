@@ -4,7 +4,7 @@ import { Briefcase, Award, ThumbsUp, Globe, ArrowRight } from 'lucide-react';
 
 const RankingSection = () => {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 bg-[rgba(0,128,128,0.16)] space-y-12">
+    <section className="w-full px-6 sm:px-12 lg:px-20 py-16  space-y-12">
       
       {/* Stats Box */}
       <div className="bg-[#008080] rounded-xl p-6 flex flex-col lg:flex-row gap-72 flex-wrap text-black">

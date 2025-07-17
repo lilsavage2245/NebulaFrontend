@@ -3,10 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import study1 from '../assets/Study1.png';
 import study2 from '../assets/Study2.png';
+import FindCoursesButtonWithModal from './FindCoursesButtonWithModal';
 
 const StudySection = () => {
   return (
-    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 bg-white">
+    <section className="w-full px-6 sm:px-12 lg:px-20 py-16 ">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
 
         {/* Left Column */}
@@ -38,11 +39,7 @@ const StudySection = () => {
               Designed for teens and adults ready to launch a tech career. Learn real world skills through structured programs, projects, and mentorship across 5 levels
             </h4>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Link to="/academy/find-courses">
-                <button className="px-6 py-2 border border-black text-[#4A2B29] rounded-full text-sm font-poppins">
-                  Find course
-                </button>
-              </Link>
+              <FindCoursesButtonWithModal />
               <Link to="/academy/learn-more">
                 <button className="px-6 py-2 border border-black text-[#4A2B29] rounded-full text-sm font-poppins">
                   Learn more

@@ -27,32 +27,26 @@ const testimonials = [
 ];
 
 const CareerBenefits = () => {
-  const [index, setIndex] = useState(0);
+  const [index, ] = useState(0);
   const current = testimonials[index];
 
-  const handlePrev = () => {
-    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-  };
+ 
 
   return (
-    <section className="relative w-full max-w-[1512px] mx-auto py-16 px-4 border-b-[5px] border-black-200">
-      <h2 className="text-[40px] font-bold text-center text-black font-poppins mb-8">
+    <section className="relative w-full max-w-[900px] mx-auto py-16 px-4 border-b-[5px] border-black-200">
+      <h2 className="text-4xl font-bold text-center text-black font-poppins mb-6">
         Why We Built This Page
       </h2>
 
-      <div className="flex items-center justify-center gap-6 mb-6 relative z-10">
+      <div className="flex items-center justify-center gap-4 mb-6 relative z-10">
         <span className="w-[120px] border-t-4 border-black" />
-        <span className="w-[100px] h-[100px] bg-teal-500/70 rounded-full relative">
+        <span className="w-[80px] h-[80px] bg-teal-500/70 rounded-full relative">
           <Quote size={60} className="absolute text-white left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
         </span>
         <span className="w-[120px] border-t-4 border-black" />
       </div>
 
-      <p className="text-center font-poppins text-[20px] leading-[30px] text-black mb-10">
+      <p className="text-center font-poppins text-[16px] leading-[30px] text-black mb-10">
         {current.message}
       </p>
 
@@ -60,29 +54,15 @@ const CareerBenefits = () => {
         <img
           src={current.image}
           alt={current.name}
-          className="w-[130px] h-[130px] rounded-full object-cover"
+          className="w-[90px] h-[90px] rounded-full object-cover"
         />
       </div>
 
       <div className="text-center font-poppins">
-        <h3 className="text-[30px] font-semibold text-black">{current.name}</h3>
-        <p className="text-[25px] text-black">{current.role}</p>
+        <h3 className="text-[21px] font-semibold text-black">{current.name}</h3>
+        <p className="text-[18px] text-black">{current.role}</p>
       </div>
-        <div className="flex justify-center mt-8">
-            <button
-            onClick={handlePrev}
-            className="px-4 py-2 bg-teal-500 text-white rounded-lg mr-4"
-            >
-            Previous
-            </button>
-            <button
-            onClick={handleNext}
-            className="px-4 py-2 bg-teal-500 text-white rounded-lg"
-            >
-            Next
-            </button>
-        </div>
-
+        
     </section>
   );
 };

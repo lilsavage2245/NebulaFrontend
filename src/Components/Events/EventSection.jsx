@@ -7,7 +7,7 @@ import Event3 from '../../assets/Event3.png';
 
 const EventsSection = () => {
   return (
-    <section className="w-full bg-white px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-center gap-[70px]">
+    <section className="w-full  px-6 sm:px-12 lg:px-20 py-16 flex flex-col items-center gap-[70px]">
       
       {/* Frame 6 - Title and Yellow Underline */}
       <div className="relative w-fit h-[67px] text-center">
